@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="A special birthday celebration">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background" id="animatedBackground"></div>
+    
+    <header class="hero-top">
+        <button class="hero-theme-btn" id="themeToggle" title="Change Theme">😊</button>
+        <div class="hero-stars">
+            <span>✨</span>
+            <span>✨</span>
+            <span>✨</span>
+            <span>✨</span>
+            <span>✨</span>
+            <span>✨</span>
+        </div>
+        <div class="hero-pills">
+            <span class="hero-pill">Happy</span>
+            <span class="hero-pill">Birthday!</span>
+        </div>
+        <div class="hero-name-pill">Amena</div>
+        <p class="hero-tagline">Another amazing year of you! 🌟</p>
+    </header>
+    
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="birthday-info">🎂 Birthday Info</button>
+            <button class="tab-button" data-tab="lapd">🚔 LAPD</button>
+        </div>
+    </div>
+    
+    <main class="rookie-main">
+        <!-- Birthday Info Tab -->
+        <div class="tab-content active" id="birthday-info-tab">
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">💝 Birthday Paragraph</h3>
+                <button class="rookie-button" id="paragraphButton">Open Here 💝</button>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">♐ Your Zodiac Sign</h3>
+                <div class="zodiac-info" id="zodiacInfo"></div>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">📊 Life Statistics</h3>
+                <div class="stats-grid" id="statsGrid"></div>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">🎉 Birthday Fun Facts</h3>
+                <div class="fun-facts-container" id="funFactsContainer"></div>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">🎨 Your Birthday Colors</h3>
+                <div class="color-palette-container" id="colorPaletteContainer"></div>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">💝 Birthday Wishes</h3>
+                <div class="wishes-container" id="wishesContainer"></div>
+            </section>
+            
+            <section class="rookie-section compact-three-grid">
+                <div class="compact-three-item">
+                    <h4 class="compact-three-title">🔢 Number</h4>
+                    <div class="numerology-info" id="numerologyInfo"></div>
+                </div>
+                <div class="compact-three-item">
+                    <h4 class="compact-three-title">💎 Birthstone</h4>
+                    <div class="birthstone-info" id="birthstoneInfo"></div>
+                </div>
+                <div class="compact-three-item">
+                    <h4 class="compact-three-title">🌸 Flower</h4>
+                    <div class="birthflower-info" id="birthflowerInfo"></div>
+                </div>
+            </section>
+            
+            <section class="rookie-section countdown-large">
+                <h3 class="rookie-section-title">⏳ Next Birthday Countdown</h3>
+                <div class="expanded-info">
+                    <p class="info-explanation">Time remaining until your next birthday celebration!</p>
+                    <div class="countdown-display" id="countdownDisplay"></div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- LAPD Tab -->
+        <div class="tab-content" id="lapd-tab">
+            <section class="rookie-section rookie-section-featured">
+                <h3 class="rookie-section-title"> Rookie Actor(s) Born in November</h3>
+                <div class="rookie-actors-container" id="rookieActorsContainer"></div>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">👮 Which LAPD Character Are You ?</h3>
+                <div class="rookie-character-container" id="rookieCharacterContainer"></div>
+                <button class="rookie-button" id="rookieCharacterButton">Find Out!</button>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">💬 Rookie Quotes</h3>
+                <div class="rookie-quote-container" id="rookieQuoteContainer"></div>
+                <button class="rookie-button" id="rookieQuoteButton">Get Quote 📝</button>
+            </section>
+            
+            <section class="rookie-section">
+                <h3 class="rookie-section-title">🛡️ Your LAPD Badge</h3>
+                <div class="badge-container" id="badgeContainer"></div>
+                <button class="rookie-button" id="badgeButton">Generate Badge! 🚔</button>
+            </section>
+        </div>
+    </main>
+    
+    <div class="paragraph-modal" id="paragraphModal">
+        <div class="paragraph-modal-content">
+            <button class="paragraph-close" id="paragraphClose">✕</button>
+            <div class="paragraph-modal-text" id="paragraphModalText">
+                Happy Birthday, Amena! I wish you the best birthday ever and I hope you have the best year ever! You bring so much joy to the function and to people too wherever you go. Your amazing smile brightens everyones day, and your kindness touches hearts in ways you may not even realizee. And your funny jokes are hard to not laugh at. On this wonderful day, I hope you feel how loved and appreciated you are. May this new year bring you endless adventures, beautiful memories, and dreams that come true. You deserve all the happiness in the world, I hope you enjoy your birthdayyy ( AND SORRY FOR BEING REALLY LATE FOR UR BDAY :( )
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
